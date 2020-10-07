@@ -11,7 +11,6 @@
     
     <meta name="google-signin-client_id" content="483824520391-b4n29pl5tmd2eg6v4mc3gc8e3vu8ijtd.apps.googleusercontent.com">
     <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
-    
     <link href='https://fonts.googleapis.com/css?family=Cinzel Decorative' rel='stylesheet'>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
