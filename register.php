@@ -31,4 +31,5 @@
 		header('location:signup.php');
 		return;
 	}
+	
 ?>
