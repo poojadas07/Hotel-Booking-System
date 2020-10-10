@@ -5,8 +5,7 @@
 	$con = mysqli_connect('localhost' , 'root' , 'root');
 
 	mysqli_select_db($con , 'tourist');
-
-
+	
 	$name = $_POST['name'];
 	$pass = $_POST['password'];
 
@@ -36,5 +35,5 @@
 		header('location:login.php');
 		return;
 	}
-	
+
 ?>
