@@ -37,7 +37,7 @@
 				    </div>
 				</div>
 				<div class="row ml-4 mr-4">
-					<a class="btn btn-primary btn-lg active btn-block" role="button" aria-pressed="true">Continue <b> &gt; &gt;</b></a>
+					<a class="btn btn-primary btn-lg active btn-block" role="button" aria-pressed="true">Continue <b class="pl-2"> &gt; &gt;</b></a>
 				</div>
 				<br>
 				<p style="text-align: center;">or Connect with Social Media</p>
