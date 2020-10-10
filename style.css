@@ -3,7 +3,6 @@ body{
 }
 
 .container {
-	
 	height: 85vh;
 	width: 80vw;
 	margin-top: 55px;
@@ -14,10 +13,47 @@ body{
 	height: 85vh;
 	background-repeat: no-repeat;
 	background-size: 120% 100%;
+	border: 2px 0px 2px 2px solid black;
+  	border-radius: 20px 0px 0px 20px;
+}
+
+.left h1{
+	text-align: center;
+	color: #fff;
+	margin-top: 30%;
+	font-weight: 900;
+	font-family: "Cinzel Decorative";
+	background-color: #0000ff;
+	width: 80%;
+	padding: 15px;
+	margin-left: 10%;
+}
+
+.left h3{
+	text-align: center;
+	color: #fff;
+	margin-top: 10%;
+	font-weight: 900;
+	font-family: "Cinzel Decorative";
+	background-color: #0000ff;
+	padding: 15px;
+	width: 80%;
+	margin-left: 10%;
 }
 
 .right {
-	background: #000000;
+	background: #fff;
 	height: 85vh;
-
+	border: 2px 2px 2px 0px solid black;
+  	border-radius: 0px 20px 20px 0px;
 }
+
+.right h1{
+	font-family: "Cinzel Decorative";
+	font-weight: 900;
+}
+
+.right button{
+	text-transform: capitalize;
+}
+
