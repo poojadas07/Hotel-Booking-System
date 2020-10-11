@@ -4,6 +4,10 @@
 	<title>SignIn</title>
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="google-signin-client_id" content="483824520391-b4n29pl5tmd2eg6v4mc3gc8e3vu8ijtd.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
+    
     <link href='https://fonts.googleapis.com/css?family=Cinzel Decorative' rel='stylesheet'>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
@@ -42,15 +46,38 @@
 				<br>
 				<p style="text-align: center;">or Connect with Social Media</p>
 
-				<div class="row ml-4 mr-4">
-					<button type="button" class="btn blue-gradient btn-fb btn-md btn-block text-left mb-3"><i class="fab fa-facebook-f pr-1"></i> Sign In with Facebook</button>
-					<button type="button" class="btn aqua-gradient btn-tw btn-md btn-block text-left mb-3"><i class="fab fa-twitter pr-1"></i> Sign In with Twitter</button>
-					<button type="button" class="btn purple-gradient btn-gplus btn-md btn-block text-left mb-3"><i class="fab fa-google-plus-g pr-1"></i> Sign In with Google +</button>
+				<div class="row ml-5 mr-4">
+					<div id="my-signin2"></div>
+
+					
+					
 				</div>
 
 			</div>
 		</div>
 	</div>
+
+
+	<script>
+	    function onSuccess(googleUser) {
+	      console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
+	    }
+	    function onFailure(error) {
+	      console.log(error);
+	    }
+	    function renderButton() {
+	      gapi.signin2.render('my-signin2', {
+	        'scope': 'profile email',
+	        'width': 420,
+	        'height': 40,
+	        'longtitle': true,
+	        'theme': 'dark',
+	        'onsuccess': onSuccess,
+	        'onfailure': onFailure
+	      });
+	    }
+	  </script>
+
 
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
