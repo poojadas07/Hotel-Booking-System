@@ -41,18 +41,16 @@
 				    </div>
 				</div>
 				<div class="row ml-4 mr-4">
-					<a class="btn btn-primary btn-lg active btn-block" role="button" aria-pressed="true">Continue <b class="pl-2"> &gt; &gt;</b></a>
+					<a href="location.php" class="btn btn-primary btn-lg active btn-block" role="button" aria-pressed="true">Continue <b class="pl-2"> &gt; &gt;</b></a>
 				</div>
 				<br>
-				<p style="text-align: center;">or Connect with Social Media</p>
+				<p style="text-align: center; font-size: 15px;">or Connect with Social Media</p>
 
 				<div class="row ml-5 mr-4">
 					<div id="my-signin2"></div>
-
-					
-					
 				</div>
-
+				<br>
+				<p style="text-align: center; font-size: 12px;">Don't have an Account? <a href="#"> Sign Up </a></p>
 			</div>
 		</div>
 	</div>
