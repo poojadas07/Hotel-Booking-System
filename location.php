@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" type="text/css" href="location.css">
 </head>
 <body>
 
@@ -30,7 +30,7 @@
 					</div>
 	    			
 	    			<div class="col-md-7 text-md-left ml-3 mt-3">
-						<a href="#!" class="green-text">
+						<a href="hotel.php" class="green-text">
 	        				<h6 class="h6 pb-1"><i class="fas fa-map-marker-alt pr-1"></i> Destination </h6>
 	      				</a>
 						<h4 class="h4 mb-4">This is title of the news</h4>
@@ -40,7 +40,7 @@
 	    			</div>
 	  			</div>
 	  			<div class="hide">
-					<a href="#!" class="red-text d-flex flex-row-reverse p-2">
+					<a href="hotel.php" class="red-text d-flex flex-row-reverse p-2">
 						<h5 class="waves-effect waves-light"><b>Read more</b><i class="fas fa-angle-double-right ml-2"></i></h5>
 					</a>
 				</div>
@@ -51,7 +51,7 @@
 				<div class="row">
 	    			
 	    			<div class="col-md-7 text-md-left ml-3 mt-3">
-						<a href="#!" class="green-text">
+						<a href="hotel.php" class="green-text">
 	        				<h6 class="h6 pb-1"><i class="fas fa-map-marker-alt pr-1"></i> Destination </h6>
 	      				</a>
 						<h4 class="h4 mb-4">This is title of the news</h4>
@@ -69,7 +69,7 @@
 					</div>
 	  			</div>
 	  			<div class="hide">
-					<a href="#!" class="red-text d-flex flex-row-reverse p-2">
+					<a href="hotel.php" class="red-text d-flex flex-row-reverse p-2">
 						<h5 class="waves-effect waves-light"><b>Read more</b><i class="fas fa-angle-double-right ml-2"></i></h5>
 					</a>
 				</div>
@@ -88,7 +88,7 @@
 					</div>
 
 	    			<div class="col-md-7 text-md-left ml-3 mt-3">
-						<a href="#!" class="green-text">
+						<a href="hotel.php" class="green-text">
 	        				<h6 class="h6 pb-1"><i class="fas fa-map-marker-alt pr-1"></i> Destination </h6>
 	      				</a>
 						<h4 class="h4 mb-4">This is title of the news</h4>
@@ -99,7 +99,7 @@
 	    			
 	  			</div>
 	  			<div class="hide">
-					<a href="#!" class="red-text d-flex flex-row-reverse p-2">
+					<a href="hotel.php" class="red-text d-flex flex-row-reverse p-2">
 						<h5 class="waves-effect waves-light"><b>Read more</b><i class="fas fa-angle-double-right ml-2"></i></h5>
 					</a>
 				</div>
@@ -109,7 +109,7 @@
 				<div class="row">
 	    			
 	    			<div class="col-md-7 text-md-left ml-3 mt-3">
-						<a href="#!" class="green-text">
+						<a href="hotel.php" class="green-text">
 	        				<h6 class="h6 pb-1"><i class="fas fa-map-marker-alt pr-1"></i> Destination </h6>
 	      				</a>
 						<h4 class="h4 mb-4">This is title of the news</h4>
@@ -127,7 +127,7 @@
 					</div>
 	  			</div>
 	  			<div class="hide">
-					<a href="#!" class="red-text d-flex flex-row-reverse p-2">
+					<a href="hotel.php" class="red-text d-flex flex-row-reverse p-2">
 						<h5 class="waves-effect waves-light"><b>Read more</b><i class="fas fa-angle-double-right ml-2"></i></h5>
 					</a>
 				</div>
@@ -145,7 +145,7 @@
 	      				</div>
 					</div>
 	    			<div class="col-md-7 text-md-left ml-3 mt-3">
-						<a href="#!" class="green-text">
+						<a href="hotel.php" class="green-text">
 	        				<h6 class="h6 pb-1"><i class="fas fa-map-marker-alt pr-1"></i> Destination </h6>
 	      				</a>
 						<h4 class="h4 mb-4">This is title of the news</h4>
@@ -156,7 +156,7 @@
 	    			
 	  			</div>
 	  			<div class="hide">
-					<a href="#!" class="red-text d-flex flex-row-reverse p-2">
+					<a href="hotel.php" class="red-text d-flex flex-row-reverse p-2">
 						<h5 class="waves-effect waves-light"><b>Read more</b><i class="fas fa-angle-double-right ml-2"></i></h5>
 					</a>
 				</div>

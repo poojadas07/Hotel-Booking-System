@@ -1,0 +1,28 @@
+body{
+	background: url('./images/bg.jpg');
+}
+
+.container{
+	margin-top: 2%; 
+}
+
+.row h1{
+	text-align: center;
+	color: #fff;
+	font-weight: 900;
+	font-family: "Cinzel Decorative";
+	width: 80%;
+	padding: 15px;
+	margin-left: 10%;
+}
+
+.row p{
+	padding-left: 5%;
+	color: #fff;
+}
+
+.head{
+	font-size: 20px;
+	font-family: "Cinzel Decorative";
+	font-weight: 900;
+}
