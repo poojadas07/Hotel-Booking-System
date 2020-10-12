@@ -1,0 +1,21 @@
+body{
+	background: url('./images/bg.jpg');
+}
+
+.row h1{
+	text-align: center;
+	color: #fff;
+	margin-top: 5%;
+	font-weight: 900;
+	font-family: "Cinzel Decorative";
+	background-color: #0000ff;
+	width: 80%;
+	padding: 15px;
+	margin-left: 10%;
+}
+
+.jumbotron {
+	background: url('./images/bg3.jpg');
+	color: #fff;
+}
+
