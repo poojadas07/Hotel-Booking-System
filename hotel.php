@@ -61,7 +61,7 @@
 							if ($resultCheck > 0) {
 								while ( $row = mysqli_fetch_assoc($result)) {
 								?>
-								<a href="#">
+								<a href="details.php">
 									<p class="head"> <?php echo $row['hname']; ?><i class="fas fa-angle-double-right ml-2"></i></p>
 									<p> <?php echo $row['hdescription']; ?> </p><br>
 								</a>
