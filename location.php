@@ -1,3 +1,15 @@
+<?php
+	session_start();
+
+	if (!isset($_SESSION['username'])) {
+		header('location:login.php');
+	}
+
+	$con = mysqli_connect('localhost' , 'root' , 'root');
+
+	mysqli_select_db($con , 'tourist');
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -14,164 +26,84 @@
 </head>
 <body>
 
-	<div class="container">
-		<div class="row">
-			<h1> Choose Your Location  </h1>
+	<div class="card">
+		<img src="images/left1.jpg" alt="photo" style="width:100%">
+		<div class="dropdown">
 
-			<div class="jumbotron text-center hoverable p-4">
-				<div class="row">
-					<div class="col-md-4 offset-md-1 mx-3 my-3">
-						<div class="view overlay">
-	        				<img src="images/jodhpur.jpg" class="img-fluid" alt="Jodhpur">
-	        				<a>
-	        					<div class="mask rgba-white-slight"></div>
-	        				</a>
-	      				</div>
-					</div>
-	    			
-	    			<div class="col-md-7 text-md-left ml-3 mt-3">
-						<a href="hotel.php" class="green-text">
-	        				<h6 class="h6 pb-1"><i class="fas fa-map-marker-alt pr-1"></i> Destination </h6>
-	      				</a>
-						<h4 class="h4 mb-4">This is title of the news</h4>
-						<p class="font-weight-normal">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore agna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.</p>
-					    <p class="font-weight-normal">by <a><strong>Carine Fox</strong></a>, 19/08/2016</p>
+			<a class="dropdown" data-toggle="dropdown">
+				<p style="font-weight: 900; font-family: 'Cinzel Decorative'">
+					<?php echo $_SESSION['username']; ?>
+					<i class="fas fa-angle-down ml-2"></i>
+				</p>
+			</a>
 
-	    			</div>
-	  			</div>
-	  			<div class="hide">
-					<a href="hotel.php" class="red-text d-flex flex-row-reverse p-2">
-						<h5 class="waves-effect waves-light"><b>Read more</b><i class="fas fa-angle-double-right ml-2"></i></h5>
-					</a>
-				</div>
-	  			
+			<div class="dropdown-menu">
+			    <a class="dropdown-item" href="logout.php"> Logout </a>
 			</div>
 
-			<div class="jumbotron text-center hoverable p-4">
-				<div class="row">
-	    			
-	    			<div class="col-md-7 text-md-left ml-3 mt-3">
-						<a href="hotel.php" class="green-text">
-	        				<h6 class="h6 pb-1"><i class="fas fa-map-marker-alt pr-1"></i> Destination </h6>
-	      				</a>
-						<h4 class="h4 mb-4">This is title of the news</h4>
-						<p class="font-weight-normal">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore agna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.</p>
-					    <p class="font-weight-normal">by <a><strong>Carine Fox</strong></a>, 19/08/2016</p>
-
-	    			</div>
-	    			<div class="col-md-4 offset-md-1 mx-3 my-3">
-						<div class="view overlay">
-	        				<img src="images/jaipur.jpg" class="img-fluid" alt="Jaipur" height="50px">
-	        				<a>
-	        					<div class="mask rgba-white-slight"></div>
-	        				</a>
-	      				</div>
-					</div>
-	  			</div>
-	  			<div class="hide">
-					<a href="hotel.php" class="red-text d-flex flex-row-reverse p-2">
-						<h5 class="waves-effect waves-light"><b>Read more</b><i class="fas fa-angle-double-right ml-2"></i></h5>
-					</a>
-				</div>
-			</div>
-
-			<div class="jumbotron text-center hoverable p-4">
-				<div class="row">
-	    			
-	    			<div class="col-md-4 offset-md-1 mx-3 my-3">
-						<div class="view overlay">
-	        				<img src="images/udaipur.jpg" class="img-fluid" alt="Udaipur">
-	        				<a>
-	        					<div class="mask rgba-white-slight"></div>
-	        				</a>
-	      				</div>
-					</div>
-
-	    			<div class="col-md-7 text-md-left ml-3 mt-3">
-						<a href="hotel.php" class="green-text">
-	        				<h6 class="h6 pb-1"><i class="fas fa-map-marker-alt pr-1"></i> Destination </h6>
-	      				</a>
-						<h4 class="h4 mb-4">This is title of the news</h4>
-						<p class="font-weight-normal">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore agna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.</p>
-					    <p class="font-weight-normal">by <a><strong>Carine Fox</strong></a>, 19/08/2016</p>
-
-	    			</div>
-	    			
-	  			</div>
-	  			<div class="hide">
-					<a href="hotel.php" class="red-text d-flex flex-row-reverse p-2">
-						<h5 class="waves-effect waves-light"><b>Read more</b><i class="fas fa-angle-double-right ml-2"></i></h5>
-					</a>
-				</div>
-			</div>
-
-			<div class="jumbotron text-center hoverable p-4">
-				<div class="row">
-	    			
-	    			<div class="col-md-7 text-md-left ml-3 mt-3">
-						<a href="hotel.php" class="green-text">
-	        				<h6 class="h6 pb-1"><i class="fas fa-map-marker-alt pr-1"></i> Destination </h6>
-	      				</a>
-						<h4 class="h4 mb-4">This is title of the news</h4>
-						<p class="font-weight-normal">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore agna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.</p>
-					    <p class="font-weight-normal">by <a><strong>Carine Fox</strong></a>, 19/08/2016</p>
-
-	    			</div>
-	    			<div class="col-md-4 offset-md-1 mx-3 my-3">
-						<div class="view overlay">
-	        				<img src="images/Jaisalmer.jpg" class="img-fluid" alt="Jaisalmer">
-	        				<a>
-	        					<div class="mask rgba-white-slight"></div>
-	        				</a>
-	      				</div>
-					</div>
-	  			</div>
-	  			<div class="hide">
-					<a href="hotel.php" class="red-text d-flex flex-row-reverse p-2">
-						<h5 class="waves-effect waves-light"><b>Read more</b><i class="fas fa-angle-double-right ml-2"></i></h5>
-					</a>
-				</div>
-			</div>
-
-			<div class="jumbotron text-center hoverable p-4">
-				<div class="row">
-	    			
-	    			<div class="col-md-4 offset-md-1 mx-3 my-3">
-						<div class="view overlay">
-	        				<img src="images/mount_abu.jpg" class="img-fluid" alt="Mount Abu">
-	        				<a>
-	        					<div class="mask rgba-white-slight"></div>
-	        				</a>
-	      				</div>
-					</div>
-	    			<div class="col-md-7 text-md-left ml-3 mt-3">
-						<a href="hotel.php" class="green-text">
-	        				<h6 class="h6 pb-1"><i class="fas fa-map-marker-alt pr-1"></i> Destination </h6>
-	      				</a>
-						<h4 class="h4 mb-4">This is title of the news</h4>
-						<p class="font-weight-normal">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore agna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.</p>
-					    <p class="font-weight-normal">by <a><strong>Carine Fox</strong></a>, 19/08/2016</p>
-
-	    			</div>
-	    			
-	  			</div>
-	  			<div class="hide">
-					<a href="hotel.php" class="red-text d-flex flex-row-reverse p-2">
-						<h5 class="waves-effect waves-light"><b>Read more</b><i class="fas fa-angle-double-right ml-2"></i></h5>
-					</a>
-				</div>
-			</div>
-
-			
 		</div>
+		
 	</div>
 
+	<div class="container">
+		<div class="row">
+
+			<h1> Choose Your Location  </h1>
+
+			<div class="jumbotron text-center hoverable ">
+			<?php 
+				for ($id = 1; $id < 6; $id++){
+
+					$s = "SELECT * FROM location where loc_id = $id; ";
+					$result = mysqli_query($con , $s);
+					$resultCheck = mysqli_num_rows($result);
+
+					if ($resultCheck > 0) {
+						while ( $row = mysqli_fetch_assoc($result)) {
+						?>
+						
+						
+							<div class="row back p-5">
+								<div class="col-md-4 offset-md-1 mx-3 my-3">
+									<div class="view overlay">
+				        				<?php echo '<img src="data:image;base64,'.base64_encode($row['image']).'" class="img-fluid" alt="Image">';?>
+				        				<a>
+				        					<div class="mask rgba-white-slight"></div>
+				        				</a>
+				      				</div>
+								</div>
+				    			
+				    			<div class="col-md-7 text-md-left ml-3 mt-3">
+									<a href="hotel.php" class="green-text">
+				        				<h6 class="h6 pb-1"><i class="fas fa-map-marker-alt pr-1"></i> Destination </h6>
+				      				</a>
+									<a href="hotel.php" class="white-text">
+										<h4 class="h4 mb-4" name="id" style="font-weight: 900; font-family: 'Cinzel Decorative'">
+											<?php echo $row['name']; ?>
+										</h4>
+									</a>
+									<p class="font-weight-normal">
+										<?php echo $row['description']; ?>
+									</p>
+									<p class="font-weight-normal">by <strong>Pooja Das</strong>, 10/10/2020</p>
+
+									<a href="hotel.php" class="red-text d-flex flex-row-reverse p-2">
+										<h5 class="waves-effect waves-light" name="search"><b>Check it</b><i class="fas fa-angle-double-right ml-2"></i></h5>
+									</a>
+
+								</div>
+	  						</div>
+	  						<br>
+				  			<?php }}}?>
+						</div>
+		</div>
+	</div>
 
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
 
-
 </body>
 </html>
+

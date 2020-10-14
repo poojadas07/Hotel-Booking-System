@@ -1,7 +1,12 @@
+<?php
+	session_start();
+
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
-	<title>SignIn</title>
+	<title>SignUp</title>
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
@@ -21,60 +26,47 @@
 		<div class="row">
 			<div class="col-sm-6 left">
 				<h1>Welcome Back</h1>
-				<h3>Sign In <br> to Continue Access</h3>
+				<h3>Sign Up <br> to Continue Access</h3>
 			</div>
 			<div class="col-sm-6 right ">
-				<h1 class="pb-3 pt-5 pl-5 pr-5">Sign In</h1>
+				<h1 class="pb-3 pt-5 pl-5 pr-5">Sign Up</h1>
 
-				<div class="row pl-5 pr-5">
-				    <div class="col-12">
-				      <div class="md-form mt-0">
-				      	<input type="text" id="form1" class="form-control" width="50%">
-						<label for="form1">Username / Email</label>
-				      </div>
-				    </div>
-				    <div class="col-12">
-				      <div class="md-form mt-0">
-				        <input type="text" id="form1" class="form-control">
-						<label for="form1">Password</label>
-				      </div>
-				    </div>
-				</div>
-				<div class="row ml-4 mr-4">
-					<a href="location.php" class="btn btn-primary btn-lg active btn-block" role="button" aria-pressed="true">Continue <b class="pl-2"> &gt; &gt;</b></a>
-				</div>
+				<?php 
+					if (isset($_SESSION['error']) ){
+						echo('<p style="color: red; padding-left: 50px; font-size: 12px;">'.htmlentities($_SESSION['error'])."</p>\n");
+						unset($_SESSION['error']);
+					}
+				?>
 				<br>
-				<p style="text-align: center; font-size: 15px;">or Connect with Social Media</p>
 
-				<div class="row ml-5 mr-4">
-					<div id="my-signin2"></div>
-				</div>
+				<form action="register.php" method="post">
+					<div class="row pl-5 pr-5">
+					    <div class="col-12">
+					      <div class="md-form mt-0">
+					      	<input type="text" id="form1" class="form-control" name="name">
+							<label for="form1"> Username </label>
+					      </div>
+					    </div>
+					    <div class="col-12">
+					      <div class="md-form mt-0">
+					        <input type="password" id="form1" class="form-control" name="password">
+							<label for="form1"> Password</label>
+					      </div>
+					    </div>
+					</div>
+				
+
+					<div class="row ml-4 mr-4">
+						<button class="btn btn-primary btn-lg active btn-block" aria-pressed="true" name="register">Continue <i class="fas fa-angle-double-right ml-2"></i></button>
+					</div>
+
+				</form>
 				<br>
-				<p style="text-align: center; font-size: 12px;">Don't have an Account? <a href="#"> Sign Up </a></p>
+				<p style="text-align: center; font-size: 12px;">Already have an Account ! <a href="login.php"> Sign In </a></p>
+				
 			</div>
 		</div>
 	</div>
-
-
-	<script>
-	    function onSuccess(googleUser) {
-	      console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
-	    }
-	    function onFailure(error) {
-	      console.log(error);
-	    }
-	    function renderButton() {
-	      gapi.signin2.render('my-signin2', {
-	        'scope': 'profile email',
-	        'width': 420,
-	        'height': 40,
-	        'longtitle': true,
-	        'theme': 'dark',
-	        'onsuccess': onSuccess,
-	        'onfailure': onFailure
-	      });
-	    }
-	  </script>
 
 
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
