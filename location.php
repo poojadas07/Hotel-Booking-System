@@ -8,6 +8,7 @@
 	$con = mysqli_connect('localhost' , 'root' , 'root');
 
 	mysqli_select_db($con , 'tourist');
+
 ?>
 
 <!DOCTYPE html>
@@ -51,15 +52,17 @@
 			<h1> Choose Your Location  </h1>
 
 			<div class="jumbotron text-center hoverable ">
+	
 			<?php 
 				for ($id = 1; $id < 6; $id++){
 
-					$s = "SELECT * FROM location where loc_id = $id; ";
+					$s = "SELECT loc_id , image, name, description FROM location where loc_id = $id; ";
 					$result = mysqli_query($con , $s);
 					$resultCheck = mysqli_num_rows($result);
 
 					if ($resultCheck > 0) {
 						while ( $row = mysqli_fetch_assoc($result)) {
+
 						?>
 						
 						
@@ -87,14 +90,15 @@
 									</p>
 									<p class="font-weight-normal">by <strong>Pooja Das</strong>, 10/10/2020</p>
 
-									<a href="hotel.php" class="red-text d-flex flex-row-reverse p-2">
-										<h5 class="waves-effect waves-light" name="search"><b>Check it</b><i class="fas fa-angle-double-right ml-2"></i></h5>
+									<?php echo '<a href="hotel.php?loc_id=' . $row['loc_id']. '" class="red-text d-flex flex-row-reverse p-2">'; ?>
+										<h5 class="btn waves-effect waves-light" style="font-size: 20px;"><b>Check it</b><i class="fas fa-angle-double-right ml-2"></i></h5>
 									</a>
-
+									
 								</div>
 	  						</div>
 	  						<br>
 				  			<?php }}}?>
+				  			
 						</div>
 		</div>
 	</div>
