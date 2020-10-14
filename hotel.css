@@ -26,3 +26,12 @@ body{
 	font-family: "Cinzel Decorative";
 	font-weight: 900;
 }
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 8vw;
+  text-align: center;
+  float: left;
+  margin-right: 5px;
+  margin-top: 5px; 
+}

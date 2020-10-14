@@ -33,6 +33,25 @@
 </head>
 <body>
 
+	<div class="card">
+		<img src="images/left1.jpg" alt="photo" style="width:100%">
+		<div class="dropdown">
+
+			<a class="dropdown" data-toggle="dropdown">
+				<p style="font-weight: 900; font-family: 'Cinzel Decorative'">
+					<?php echo $_SESSION['username']; ?>
+					<i class="fas fa-angle-down ml-2"></i>
+				</p>
+			</a>
+
+			<div class="dropdown-menu">
+			    <a class="dropdown-item" href="logout.php"> Logout </a>
+			</div>
+
+		</div>
+		
+	</div>
+
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-6">
