@@ -59,11 +59,23 @@
 
                 <form method="post" id="SignupForm">
                     <fieldset>
+
+                    	<h2 style="text-align: center; color: green;">
+                    		<b> 
+                    			<?php 
+		                        	echo $_SESSION['success'];
+		                        	unset($_SESSION['success']);
+		                        ?> 
+		                    </b>
+		                </h2>
+                        <hr><br>
+                        <div class="row pl-5 pr-5">
+                            <div class="col-12">
+                                
+                            </div>
+                        </div>
                         
-                        <?php 
-                        	echo $_SESSION['success'];
-                        	unset($_SESSION['success']);
-                        ?>
+                        
                     </fieldset>
 
                 </form>
