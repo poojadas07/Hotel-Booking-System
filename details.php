@@ -57,7 +57,7 @@
                 <div id='progress'><div id='progress-complete'></div></div>
                 <br>
 
-                <form action="" method="post" id="SignupForm">
+                <form action="save.php" method="post" id="SignupForm">
                     <fieldset>
                         <h2 style="text-align: center;"><b> General Information </b></h2>
                         <hr><br>
@@ -89,7 +89,7 @@
                             <div class="col-12">
                               <div class="md-form mt-0">
                                 <input type="text" id="form5" class="form-control" name="addr" required>
-                                <label for="form5"><b><i class="fa fa-home" aria-hidden="true"></i> Address </b></label>
+                                <label for="form5"><b><i class="fas fa-map-marker-alt"></i> Address </b></label>
                               </div>
                             </div>
                             <div class="col-6">
@@ -134,7 +134,7 @@
                         <div class="row pl-5 pr-5">
                             <div class="col-6">
                               <div class="md-form mt-0">
-                                <p><b> Room Type </b>
+                                <p><b><i class="fa fa-home" aria-hidden="true"></i> Room Type </b>
                                 <select class="custom-select" required>
                                   <option selected> Please Select </option>
                                   <option value="1"> Standard Room (1 or 2 People) </option>
@@ -151,29 +151,29 @@
                               <div class="md-form mt-0">
                                 <p></p>
                                 <input type="number" id="form11" class="form-control" name="number" required>
-                                <label for="form11"><b> Number of Guests </b></label>
+                                <label for="form11"><b><i class="fas fa-users"></i> Number of Guests </b></label>
                               </div>
                             </div>
                             <div class="col-12">
                               <div class="md-form mt-0">
-                                <p><b> Arrival Date & Time </b>
+                                <p><b><i class="fas fa-plane-arrival"></i> Arrival Date & Time </b>
                                 <input type="datetime-local" id="form13" name="datetime1" class="ml-5 pl-5" required></p>
                               </div>
                             </div>
                             <div class="col-12">
                               <div class="md-form mt-0">
-                                <p><b> Departure Date & Time </b>
+                                <p><b><i class="fas fa-plane-departure"></i> Departure Date & Time </b>
                                 <input type="datetime-local" id="form14" name="datetime2" class="ml-5 pl-5" required></p>
                               </div>
                             </div>
                             <div class="col-12">
-                                <p><b> Free PickUp? </b>
+                                <p><i class="fas fa-taxi"></i><b> Free PickUp? </b>
                                 <div class="custom-control custom-radio ml-3">
-                                  <input type="radio" class="custom-control-input" id="defaultGroupExample1" name="groupOfDefaultRadios" checked required>
+                                  <input type="radio" class="custom-control-input" id="defaultGroupExample1" name="groupOfDefaultRadios" checked >
                                   <label class="custom-control-label" for="defaultGroupExample1"> Yes Please! - Pick me up on arrival </label>
                                 </div>
                                 <div class="custom-control custom-radio ml-3">
-                                  <input type="radio" class="custom-control-input" id="defaultGroupExample2" name="groupOfDefaultRadios" required>
+                                  <input type="radio" class="custom-control-input" id="defaultGroupExample2" name="groupOfDefaultRadios" >
                                   <label class="custom-control-label" for="defaultGroupExample2"> No Thanks! - I'll make my own way there </label>
                                 </div>
                                 </p>
@@ -181,26 +181,24 @@
                             <div class="col-12">
                               <div class="md-form mt-0">
                                 <input type="number" id="form15" class="form-control" name="flight" required>
-                                <label for="form15"><b> Flight Number </b></label>
+                                <label for="form15"><b><i class="fas fa-fighter-jet"></i> Flight Number </b></label>
                               </div>
                             </div>
-                            <div class="col-12">
-                              <div class="md-form mt-1">
-                                <textarea id="form16" class="md-textarea form-control" rows="4" required></textarea>
-                                <label for="form16"><b> Special Message </b></label>
-                            </div>
-                            </div>
-                            
                             
                         </div>
 
                     </fieldset>
 
                     <fieldset>
-                        <h2 style="text-align: center;"><b> Thank You </b></h2>
+                        <h2 style="text-align: center;"><b> Special Request </b></h2>
                         <hr><br>
                         <div class="row pl-5 pr-5">
-                            
+                            <div class="col-12">
+                                <div class="md-form mt-1">
+                                    <textarea id="form16" class="md-textarea form-control" rows="4" ></textarea>
+                                    <label for="form16"><b><i class="fas fa-edit"></i> Special Message </b></label>
+                                </div>
+                            </div>
                         </div>
 
                     </fieldset>
