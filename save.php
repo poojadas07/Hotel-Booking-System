@@ -57,13 +57,13 @@
 	 		$flightn = $row["flightn"];
 	 		$message = $row["message"];
 	 	}
-	 }
+	}
 ?>
 
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Details</title>
+    <title>Show Details</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
  
@@ -192,10 +192,7 @@
 		      			<i class="ml-2 pl-4"> <?php echo $flightn ;?> </i>
 		      		</p>
 		      	</div>
-		      	
-		      	<a>
-		      		<button type="submit" class="btn btn-primary btn-md active ml-5 pl-5 pr-5"><i class="fas fa-share mr-2"></i> Send Details </button>
-		      	</a>
+		      	<p style="text-align: center; font-size: 13px; color: red;">Take the screenshot of this for future reference !</p>
 		      </div>
 		    </div>
 		  </div>
