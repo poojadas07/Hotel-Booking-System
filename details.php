@@ -65,7 +65,7 @@
                             <div class="col-6">
                               <div class="md-form mt-0">
                                 <input type="text" id="form1" class="form-control" name="name" required>
-                                <label for="form1"><b><i class="fa fa-user" aria-hidden="true"></i> Name </b></label>
+                                <label for="form1"><b><i class="fa fa-user" aria-hidden="true"></i> Full Name </b></label>
                               </div>
                             </div>
                             <div class="col-6">
@@ -88,14 +88,14 @@
                             </div>
                             <div class="col-12">
                               <div class="md-form mt-0">
-                                <input type="text" id="form5" class="form-control" name="addr" required>
+                                <input type="text" id="form5" class="form-control" name="address" required>
                                 <label for="form5"><b><i class="fas fa-map-marker-alt"></i> Address </b></label>
                               </div>
                             </div>
                             <div class="col-6">
                               <div class="md-form ml-4 mt-0">
                                 <input type="text" id="form6" class="form-control" name="city" >
-                                <label for="form6"><b><i class="far fa-loca"></i> City </b></label>
+                                <label for="form6"><b> City </b></label>
                               </div>
                             </div>
                             <div class="col-6">
@@ -112,7 +112,7 @@
                             </div>
                             <div class="col-6">
                               <div class="md-form mr-4 mt-0">
-                                <input type="text" id="form9" class="form-control" name="Country" >
+                                <input type="text" id="form9" class="form-control" name="country" required>
                                 <label for="form9"><b> Country </b></label>
                               </div>
                             </div>
@@ -135,14 +135,14 @@
                             <div class="col-6">
                               <div class="md-form mt-0">
                                 <p><b><i class="fa fa-home" aria-hidden="true"></i> Room Type </b>
-                                <select class="custom-select" required>
+                                <select class="custom-select" name="room" required>
                                   <option selected> Please Select </option>
-                                  <option value="1"> Standard Room (1 or 2 People) </option>
-                                  <option value="2"> Family Room (1 or 4 People) </option>
-                                  <option value="3"> Private Room (1 or 3 People) </option>
-                                  <option value="4"> Mix Dorm Room (6 People) </option>
-                                  <option value="5"> Female Dorm Room (6 People) </option>
-                                  <option value="6"> Male Dorm Room (6 People </option>
+                                  <option value="Standard Room (1 or 2 People)"> Standard Room (1 or 2 People) </option>
+                                  <option value="Family Room (1 or 4 People)"> Family Room (1 or 4 People) </option>
+                                  <option value="Private Room (1 or 3 People)"> Private Room (1 or 3 People) </option>
+                                  <option value="Mix Dorm Room (6 People)"> Mix Dorm Room (6 People) </option>
+                                  <option value="Female Dorm Room (6 People)"> Female Dorm Room (6 People) </option>
+                                  <option value="Male Dorm Room (6 People)"> Male Dorm Room (6 People) </option>
                                 </select>
                                 </p>
                               </div>
@@ -150,37 +150,37 @@
                             <div class="col-6">
                               <div class="md-form mt-0">
                                 <p></p>
-                                <input type="number" id="form11" class="form-control" name="number" required>
+                                <input type="number" id="form11" class="form-control" name="nroom" required>
                                 <label for="form11"><b><i class="fas fa-users"></i> Number of Guests </b></label>
                               </div>
                             </div>
                             <div class="col-12">
                               <div class="md-form mt-0">
                                 <p><b><i class="fas fa-plane-arrival"></i> Arrival Date & Time </b>
-                                <input type="datetime-local" id="form13" name="datetime1" class="ml-5 pl-5" required></p>
+                                <input type="datetime-local" id="form13" name="arrival" class="form-control ml-5 pl-5" required></p>
                               </div>
                             </div>
                             <div class="col-12">
                               <div class="md-form mt-0">
                                 <p><b><i class="fas fa-plane-departure"></i> Departure Date & Time </b>
-                                <input type="datetime-local" id="form14" name="datetime2" class="ml-5 pl-5" required></p>
+                                <input type="datetime-local" id="form14" name="departure" class="form-control ml-5 pl-5" required></p>
                               </div>
                             </div>
                             <div class="col-12">
                                 <p><i class="fas fa-taxi"></i><b> Free PickUp? </b>
                                 <div class="custom-control custom-radio ml-3">
-                                  <input type="radio" class="custom-control-input" id="defaultGroupExample1" name="groupOfDefaultRadios" checked >
+                                  <input type="radio" class="custom-control-input form-control" id="defaultGroupExample1" name="pick" value="Yes Please! - Pick me up on arrival" checked >
                                   <label class="custom-control-label" for="defaultGroupExample1"> Yes Please! - Pick me up on arrival </label>
                                 </div>
                                 <div class="custom-control custom-radio ml-3">
-                                  <input type="radio" class="custom-control-input" id="defaultGroupExample2" name="groupOfDefaultRadios" >
+                                  <input type="radio" class="custom-control-input form-control" id="defaultGroupExample2" name="pick" value="No Thanks! - I will make my own way there">
                                   <label class="custom-control-label" for="defaultGroupExample2"> No Thanks! - I'll make my own way there </label>
                                 </div>
                                 </p>
                             </div>
                             <div class="col-12">
                               <div class="md-form mt-0">
-                                <input type="number" id="form15" class="form-control" name="flight" required>
+                                <input type="number" id="form15" class="form-control" name="flightn" required>
                                 <label for="form15"><b><i class="fas fa-fighter-jet"></i> Flight Number </b></label>
                               </div>
                             </div>
@@ -195,7 +195,7 @@
                         <div class="row pl-5 pr-5">
                             <div class="col-12">
                                 <div class="md-form mt-1">
-                                    <textarea id="form16" class="md-textarea form-control" rows="4" ></textarea>
+                                    <textarea id="form16" class="md-textarea form-control" rows="4" name="message"></textarea>
                                     <label for="form16"><b><i class="fas fa-edit"></i> Special Message </b></label>
                                 </div>
                             </div>
