@@ -63,8 +63,6 @@
 						while ( $row = mysqli_fetch_assoc($result)) {
 
 						?>
-						
-						
 							<div class="row back p-5">
 								<div class="col-md-4 offset-md-1 mx-3 my-3">
 									<div class="view overlay">
