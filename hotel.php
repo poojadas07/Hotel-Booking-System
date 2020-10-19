@@ -32,50 +32,73 @@
 	<link rel="stylesheet" type="text/css" href="hotel.css">
 </head>
 <body>
+		
+	<div class="container-fluid">
+		<div class="row">
+			
+			<div class="card first mt-1">
+				<img src="images/left1.jpg" alt="photo" style="width:100%">
+				<div class="dropdown">
 
-	<div class="card">
-		<img src="images/left1.jpg" alt="photo" style="width:100%">
-		<div class="dropdown">
+					<a class="dropdown" data-toggle="dropdown">
+						<p style="font-weight: 900; font-family: 'Cinzel Decorative'; color: #000;">
+							<?php echo $_SESSION['username']; ?>
+							<i class="fas fa-angle-down ml-2"></i>
+						</p>
+					</a>
 
-			<a class="dropdown" data-toggle="dropdown">
-				<p style="font-weight: 900; font-family: 'Cinzel Decorative'">
-					<?php echo $_SESSION['username']; ?>
-					<i class="fas fa-angle-down ml-2"></i>
-				</p>
-			</a>
+					<div class="dropdown-menu">
+					    <a class="dropdown-item" href="logout.php"> Logout </a>
+					</div>
 
-			<div class="dropdown-menu">
-			    <a class="dropdown-item" href="logout.php"> Logout </a>
+				</div>
+				
 			</div>
+			<h1>Restaurants Near Me</h1><br>
 
 		</div>
-		
-	</div>
-
-	<div class="container">
 		<div class="row">
-			<div class="col-sm-6">
-				<h1>Restaurants Near Me</h1><br>
+
+			<?php
+				if ($resultCheck > 0) {
+					while ( $row = mysqli_fetch_assoc($result)) {
+			?>
+
+			<div class="col-4">
 				
-						<?php
-							if ($resultCheck > 0) {
-								while ( $row = mysqli_fetch_assoc($result)) {
-								?>
-								<a href="details.php">
-									<p class="head"> <?php echo $row['hname']; ?><i class="fas fa-angle-double-right ml-2"></i></p>
-									<p> <?php echo $row['hdescription']; ?> </p><br>
-								</a>
-								<?php
-								}
-							} 
-						?>
-						
+					<div class="card card-image mt-4 detail" style="width: 32vw; height: 65vh;">
+
+					  <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4" 
+					  		style="">
+					    <div class="mt-5">
+					    	<br><br>
+					    	<a class="btn btn-pink mt-4" style=""><?php echo $row['discount']; ?>%</a>
+					    </div>
+					  </div>
+
+					  <div class="card-body">
+					  	<p class="card-text pink-text" style="float: right; font-size: 30px; line-height: 15px;"><b> $ <?php echo $row['prate']; ?> </b><br><b style="font-size: 10px; "> YOUR PERSONAL RATE </b></p>
+					    <h6 class="card-tittle black-text"><b><?php echo $row['hname']; ?></b><br><i class="fas fa-map-marker-alt pr-1" style="font-size: 12px;"> <?php echo $row['location']; ?> </i></h6>
+					    <br>
+					    <p class="card-text grey-text" style="float: right; font-size: 25px; line-height: 15px;"><b style=" text-decoration: line-through;"> $ <?php echo $row['srate']; ?></b><br><b style="font-size: 10px; "> STANDARD RATE </b></p>
+					    
+					    <span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star"></span>
+						<span class="fa fa-star"></span>
+					    
+					  </div>
+
+					</div>
+				<?php echo '<img src="data:image;base64,'.base64_encode($row['image']).'" class="img-fluid" alt="Image">';?>
 			</div>
-			<div class="col-sm-6">
-				<div class="view overlay">
-					<img src="images/hotel.jpg" class="img-fluid" alt="Hotel">
-				</div>
-			</div>
+			<?php
+					}
+				} 
+			?>
+			
+			
 		</div>
 		<br>
 	</div>
