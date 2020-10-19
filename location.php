@@ -52,6 +52,7 @@
 			<div class="jumbotron text-center hoverable ">
 	
 			<?php 
+			
 				for ($id = 1; $id < 6; $id++){
 
 					$s = "SELECT loc_id , image, name, description FROM location where loc_id = $id; ";
