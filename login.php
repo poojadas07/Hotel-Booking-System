@@ -54,7 +54,7 @@
 				
 
 					<div class="row ml-4 mr-4">
-						<button class="btn btn-primary btn-lg active btn-block" role="button" aria-pressed="true" onclick="return doValidate();">Continue <i class="fas fa-angle-double-right ml-2"></i></button>
+						<button class="btn btn-lg active btn-block" role="button" aria-pressed="true" onclick="return doValidate();">Continue <i class="fas fa-angle-double-right ml-2"></i></button>
 					</div>
 
 				</form>
@@ -65,7 +65,7 @@
 					<div id="my-signin2"></div>
 				</div>
 				<br>
-				<p style="text-align: center; font-size: 12px;">Don't have an Account? <a href="signup.php"> Sign Up </a></p>
+				<p style="text-align: center; font-size: 12px;">Don't have an Account? <a href="signup.php" style="color: #9C0A5A;"><b> Sign Up </b></a></p>
 			</div>
 		</div>
 	</div>

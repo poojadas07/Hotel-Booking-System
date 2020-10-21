@@ -8,12 +8,20 @@ body{
 	margin-top: 55px;
 }
 
+.btn{
+	background-color: #9C0A5A;
+	color: #fff;
+}
+
+.btn:hover{
+	color:  #fff;
+}
 
 .left {
-	background: url('./images/left1.jpg');
+	background: url('./images/left.jpg');
 	height: 85vh;
 	background-repeat: no-repeat;
-	background-size: 120% 100%;
+	background-size: cover;
 	border: 2px 0px 2px 2px solid black;
   	border-radius: 20px 0px 0px 20px;
 }
@@ -24,7 +32,7 @@ body{
 	margin-top: 30%;
 	font-weight: 900;
 	font-family: "Cinzel Decorative";
-	background-color: #0000ff;
+	background-color: #9C0A5A;
 	width: 80%;
 	padding: 15px;
 	margin-left: 10%;
@@ -36,7 +44,7 @@ body{
 	margin-top: 10%;
 	font-weight: 900;
 	font-family: "Cinzel Decorative";
-	background-color: #0000ff;
+	background-color: #9C0A5A;
 	padding: 15px;
 	width: 80%;
 	margin-left: 10%;

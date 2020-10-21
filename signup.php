@@ -54,12 +54,12 @@
 				
 
 					<div class="row ml-4 mr-4">
-						<button class="btn btn-primary btn-lg active btn-block" aria-pressed="true" name="register">Continue <i class="fas fa-angle-double-right ml-2"></i></button>
+						<button class="btn btn-lg active btn-block" aria-pressed="true" name="register">Continue <i class="fas fa-angle-double-right ml-2"></i></button>
 					</div>
 
 				</form>
 				<br>
-				<p style="text-align: center; font-size: 12px;">Already have an Account ! <a href="login.php"> Sign In </a></p>
+				<p style="text-align: center; font-size: 12px;">Already have an Account ! <a href="login.php" style="color: #9C0A5A;"><b> Sign In </b></a></p>
 				
 			</div>
 		</div>

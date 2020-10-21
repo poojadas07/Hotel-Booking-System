@@ -87,8 +87,8 @@
 									</p>
 									<p class="font-weight-normal">by <strong>Pooja Das</strong>, 10/10/2020</p>
 
-									<?php echo '<a href="hotel.php?loc_id=' . $row['loc_id']. '" class="red-text d-flex flex-row-reverse p-2">'; ?>
-										<h5 class="btn waves-effect waves-light" style="font-size: 20px;"><b>Check it</b><i class="fas fa-angle-double-right ml-2"></i></h5>
+									<?php echo '<a href="hotel.php?loc_id=' . $row['loc_id']. '">'; ?>
+										<button class="btn btn-lg active" role="button" aria-pressed="true">Continue <i class="fas fa-angle-double-right ml-2"></i></button>
 									</a>
 									
 								</div>

@@ -7,20 +7,30 @@ body{
 	margin-top: 5%;
 	font-weight: 900;
 	font-family: "Cinzel Decorative";
-	background-color: #0000ff;
+	background-color: #9C0A5A;
 	width: 80%;
 	padding: 15px;
 	margin-left: 10%;
 }
+.btn{
+	background-color: #9C0A5A;
+	color: #fff;
+	float: right;
+}
+
+.btn:hover{
+	color:  #fff;
+}
+
 .jumbotron {
 	color: #fff;
 	background-color: transparent;
 }
 
 .back {
-	background: url('./images/bg3.jpg');
-	border: 1px solid black;
-	border-radius: 5%;
+	background: url('./images/gg.jpg');
+	background-repeat: no-repeat;
+	font-size: 20px;
 }
 
 .jumbotron h4{
