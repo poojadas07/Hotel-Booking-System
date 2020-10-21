@@ -33,7 +33,7 @@
 
 </head>
 <body>
-	
+
 	<div class="container-fluid">
 		<div class="row">
 			
@@ -69,10 +69,11 @@
 				
 					<div class="card card-image mt-4 detail" style="width: 32vw; height: 65vh;">
 
-					  <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4" 
-					  		style="">
+					  <?php echo '<div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4" 
+					  		style="background: url(data:image;base64,'.base64_encode($row['image']).');background-repeat: no-repeat; background-size: cover;">' ?>
 					    <div class="mt-5">
 					    	<br><br>
+
 					    	<a class="btn btn-pink mt-4" style=""><?php echo $row['discount']; ?>%</a>
 					    </div>
 					  </div>
@@ -81,6 +82,7 @@
 					  	<p class="card-text pink-text" style="float: right; font-size: 30px; line-height: 15px;"><b> $ <?php echo $row['prate']; ?> </b><br><b style="font-size: 10px; "> YOUR PERSONAL RATE </b></p>
 					    <h6 class="card-tittle black-text"><b><?php echo $row['hname']; ?></b><br><i class="fas fa-map-marker-alt pr-1" style="font-size: 12px;"> <?php echo $row['location']; ?> </i></h6>
 					    <br>
+					    
 					    <p class="card-text grey-text" style="float: right; font-size: 25px; line-height: 15px;"><b style=" text-decoration: line-through;"> $ <?php echo $row['srate']; ?></b><br><b style="font-size: 10px; "> STANDARD RATE </b></p>
 					    
 					    <span class="fa fa-star checked"></span>
@@ -92,7 +94,7 @@
 					  </div>
 
 					</div>
-				<?php echo '<img src="data:image;base64,'.base64_encode($row['image']).'" class="img-fluid" alt="Image">';?>
+				
 			</div>
 			<?php
 					}
