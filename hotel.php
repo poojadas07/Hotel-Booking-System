@@ -67,14 +67,14 @@
 
 			<div class="col-4">
 				
-					<div class="card card-image mt-4 detail" style="width: 32vw; height: 65vh;">
+					<div class="card card-image mt-4 detail" style="width: 32vw; height: 70vh;">
 
 					  <?php echo '<div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4" 
 					  		style="background: url(data:image;base64,'.base64_encode($row['image']).');background-repeat: no-repeat; background-size: cover;">' ?>
 					    <div class="mt-5">
 					    	<br><br>
 
-					    	<a class="btn btn-pink mt-4" style=""><?php echo $row['discount']; ?>%</a>
+					    	<a class="btn btn-pink mt-4"><?php echo $row['discount']; ?>%</a>
 					    </div>
 					  </div>
 
@@ -91,8 +91,9 @@
 						<span class="fa fa-star"></span>
 						<span class="fa fa-star"></span>
 					    
+					    <button type="submit" class="btn btn-primary btn-md active mr-5 mt-4" id="SaveAccount" style="float: right;"> See Details <i class="fas fa-angle-double-right ml-2"></i></button>
 					  </div>
-
+					  
 					</div>
 				
 			</div>
