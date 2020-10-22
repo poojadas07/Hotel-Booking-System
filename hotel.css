@@ -12,9 +12,20 @@ h1{
 	margin-top: 5%;
 	font-weight: 900;
 	font-family: "Cinzel Decorative";
-	background-color: #0000ff;
-	width: 80%;
-	margin-left: 4%;
+	background-color: #9C0A5A;
+	width: 50%;
+	margin-left: 20%;
+	padding: 5px;
+}
+
+.btn{
+	background-color: #9C0A5A;
+	color: #fff;
+	float: right;
+}
+
+.btn:hover{
+	color:  #fff;
 }
 
 .row p{

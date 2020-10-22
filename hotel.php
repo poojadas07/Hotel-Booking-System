@@ -91,7 +91,10 @@
 						<span class="fa fa-star"></span>
 						<span class="fa fa-star"></span>
 					    
-					    <button type="submit" class="btn btn-primary btn-md active mr-5 mt-4" id="SaveAccount" style="float: right;"> See Details <i class="fas fa-angle-double-right ml-2"></i></button>
+					    <a href="details.php">
+							<button type="submit" class="btn btn-md active mr-5 mt-4" id="SaveAccount" style="float: right;"> See Details <i class="fas fa-angle-double-right ml-2"></i></button>
+					    </a>
+
 					  </div>
 					  
 					</div>

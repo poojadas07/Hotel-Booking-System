@@ -64,14 +64,6 @@
 
 						?>
 							<div class="row back p-5">
-								<div class="col-md-4 offset-md-1 mx-3 my-3">
-									<div class="view overlay">
-				        				<?php echo '<img src="data:image;base64,'.base64_encode($row['image']).'" class="img-fluid" alt="Image">';?>
-				        				<a>
-				        					<div class="mask rgba-white-slight"></div>
-				        				</a>
-				      				</div>
-								</div>
 				    			
 				    			<div class="col-md-7 text-md-left ml-3 mt-3">
 									<a href="hotel.php" class="green-text">
@@ -91,6 +83,15 @@
 										<button class="btn btn-lg active" role="button" aria-pressed="true">Continue <i class="fas fa-angle-double-right ml-2"></i></button>
 									</a>
 									
+								</div>
+
+								<div class="col-md-4 offset-md-1 mx-3 my-3">
+									<div class="view overlay">
+				        				<?php echo '<img src="data:image;base64,'.base64_encode($row['image']).'" class="img-fluid" alt="Image">';?>
+				        				<a>
+				        					<div class="mask rgba-white-slight"></div>
+				        				</a>
+				      				</div>
 								</div>
 	  						</div>
 	  						<br>

@@ -8,9 +8,19 @@ body{
 	margin-top: 5%;
 	font-weight: 900;
 	font-family: "Cinzel Decorative";
-	background-color: #0000ff;
+	background-color: #9C0A5A;
 	width: 85%;
 	margin-left: 8%;
+}
+
+.btn{
+	background-color: #9C0A5A;
+	color: #fff;
+	float: right;
+}
+
+.btn:hover{
+	color:  #fff;
 }
 
 .card {
@@ -51,7 +61,7 @@ body{
 	position: absolute; 
 	height: 15px; 
 	min-width: 10px; 
-	background-color: #337ab7; 
+	background-color: #9C0A5A; 
 	transition: width .5s ease-in-out;
     border-radius: 20px;
 }

@@ -203,7 +203,7 @@
 
                     </fieldset>
 
-                    <button type="submit" class="btn btn-primary btn-md active mr-5" id="SaveAccount" style="float: right;"> Submit Form <i class="fas fa-angle-double-right ml-2"></i></button>
+                    <button type="submit" class="btn btn-md active mr-5" id="SaveAccount" style="float: right;"> Submit Form <i class="fas fa-angle-double-right ml-2"></i></button>
 
                 </form>
 
@@ -225,8 +225,8 @@
 
           $signupForm.formToWizard({
             submitButton: 'SaveAccount',
-            nextBtnClass: 'btn btn-primary btn-md active mr-5 next',
-            prevBtnClass: 'btn btn-primary btn-md active mr-5 prev',
+            nextBtnClass: 'btn btn-md active mr-5 next',
+            prevBtnClass: 'btn btn-md active mr-5 prev',
             buttonTag:    'button',
             validateBeforeNext: function(form, step) {
               var stepIsValid = true;
