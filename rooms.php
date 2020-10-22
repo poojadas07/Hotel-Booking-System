@@ -9,7 +9,11 @@
 
   mysqli_select_db($con , 'tourist');
 
-  
+  $xyz = $_GET['hotel_number'];
+
+  $s = "SELECT * FROM rooms where rooms.room_id = $xyz; ";
+  $result = mysqli_query($con , $s);
+  $resultCheck = mysqli_num_rows($result);
   
 ?>
 
@@ -56,26 +60,36 @@
     </div>
     <div class="row ml-4">
 
+      <?php
+        if ($resultCheck > 0) {
+          while ( $row = mysqli_fetch_assoc($result)) {
+      ?>
+
       <div class="col-2 ml-5">
         
-          <div class="card card-image mt-4 detail" style="width: 25vw; height: 75vh;">
+          <div class="card card-image mt-4 detail" style="width: 25vw; height: 71vh;">
 
-           <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4" 
-                style="background: url('./images/left1.jpg');background-repeat: no-repeat; background-size: cover;">
-              <div class="mt-5">
+           <?php echo '<div class="text-white text-center d-flex py-5 px-4" 
+                style="background: url(data:image;base64,'.base64_encode($row['image']).'); background-repeat: no-repeat; background-size: cover;">' ?>
+              <div class="mt-5 pt-3">
                 <br><br>
 
-                <a class="btn btn-pink mt-4">%</a>
+                <p class="">  </p>
               </div>
             </div>
 
             <div class="card-body">
               
-              <h6 class="card-tittle black-text ml-3">Hotel Name <br><i class="fas fa-star pr-1" style="font-size: 12px;"> jhgfghj</i></h6>
+              <h6 class="card-tittle black-text ml-3"><b> <?php echo $row['room_type']; ?> </b><br>
+                <b style="font-size: 10px;">4.0 <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span></b></h6>
               <p class="card-text black-text mr-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
               tempor incididunt.</p>
               <hr>
-              <a href="rooms.php">
+              <a href="details.php">
               <button type="submit" class="btn btn-md btn-block active"> Select This Room <i class="fas fa-angle-double-right ml-2"></i></button>
               </a>
 
@@ -86,116 +100,25 @@
       </div>
       
       <div class="col-1 ml-5 mt-5 pl-5">
-          <div style="width: 5vw; height: 71vh; background-color: #0000ff; color: #fff;">
+          <div class="sidebar">
               <ul class="p-0 pt-4">
-                <li class="py-2 text-center">a</li>
+                <li class="py-1 text-center"><b><i class="fas fa-wifi"></i><br>24*7</b></li>
                 <hr>
-                <li class="py-2 text-center">a</li>
+                <li class="py-1 text-center"><b><i class="fas fa-spa"></i><br>spa</b></li>
                 <hr>
-                <li class="py-2 text-center">a</li>
+                <li class="py-1 text-center"><b><i class="fas fa-dumbbell"></i><br>gym</b></li>
                 <hr>
-                <li class="py-2 text-center">a</li>
+                <li class="py-1 text-center"><b><i class="fas fa-users"></i><br>popular</b></li>
                 <hr>
-                <li class="py-2 text-center">a</li>
-                <hr>
-                <li class="py-2 text-center">a</li>
+                <li class="py-1 text-center"><b><i class="fas fa-smoking-ban"></i><br>ban</b></li>
               </ul>
           </div>  
       </div>
 
-      <div class="col-2 ml-5">
-        
-          <div class="card card-image mt-4 detail" style="width: 25vw; height: 75vh;">
-
-           <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4" 
-                style="background: url('./images/left1.jpg');background-repeat: no-repeat; background-size: cover;">
-              <div class="mt-5">
-                <br><br>
-
-                <a class="btn btn-pink mt-4">%</a>
-              </div>
-            </div>
-
-            <div class="card-body">
-              
-              <h6 class="card-tittle black-text ml-3">Hotel Name <br><i class="fas fa-star pr-1" style="font-size: 12px;"> jhgfghj</i></h6>
-              <p class="card-text black-text mr-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt.</p>
-              <hr>
-              <a href="rooms.php">
-              <button type="submit" class="btn btn-md btn-block active"> Select This Room <i class="fas fa-angle-double-right ml-2"></i></button>
-              </a>
-
-          </div>
-            
-        </div>
-
-      </div>
-      
-      <div class="col-1 ml-5 mt-5 pl-5">
-          <div style="width: 5vw; height: 71vh; background-color: #0000ff; color: #fff;">
-              <ul class="p-0 pt-4">
-                <li class="py-2 text-center">a</li>
-                <hr>
-                <li class="py-2 text-center">a</li>
-                <hr>
-                <li class="py-2 text-center">a</li>
-                <hr>
-                <li class="py-2 text-center">a</li>
-                <hr>
-                <li class="py-2 text-center">a</li>
-                <hr>
-                <li class="py-2 text-center">a</li>
-              </ul>
-          </div>  
-      </div>
-
-      <div class="col-2 ml-5">
-        
-          <div class="card card-image mt-4 detail" style="width: 25vw; height: 75vh;">
-
-           <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4" 
-                style="background: url('./images/left1.jpg');background-repeat: no-repeat; background-size: cover;">
-              <div class="mt-5">
-                <br><br>
-
-                <a class="btn btn-pink mt-4">%</a>
-              </div>
-            </div>
-
-            <div class="card-body">
-              
-              <h6 class="card-tittle black-text ml-3">Hotel Name <br><i class="fas fa-star pr-1" style="font-size: 12px;"> jhgfghj</i></h6>
-              <p class="card-text black-text mr-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt.</p>
-              <hr>
-              <a href="rooms.php">
-              <button type="submit" class="btn btn-md btn-block active"> Select This Room <i class="fas fa-angle-double-right ml-2"></i></button>
-              </a>
-
-          </div>
-            
-        </div>
-
-      </div>
-      
-      <div class="col-1 ml-5 mt-5 pl-5">
-          <div style="width: 5vw; height: 71vh; background-color: #0000ff; color: #fff;">
-              <ul class="p-0 pt-4">
-                <li class="py-2 text-center">a</li>
-                <hr>
-                <li class="py-2 text-center">a</li>
-                <hr>
-                <li class="py-2 text-center">a</li>
-                <hr>
-                <li class="py-2 text-center">a</li>
-                <hr>
-                <li class="py-2 text-center">a</li>
-                <hr>
-                <li class="py-2 text-center">a</li>
-              </ul>
-          </div>  
-      </div>
+      <?php
+            }
+          } 
+      ?>
       
     </div>
   </div>
