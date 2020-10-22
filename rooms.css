@@ -55,3 +55,19 @@ h6{
 li{
 	list-style: none;
 }
+
+li:hover{
+	color: #9C0A5A;
+}
+.sidebar{
+	box-shadow: 0 0 4px 3px #9C0A5A;
+	width: 5vw; 
+	height: 66vh; 
+	background-color: #fff; 
+	color: #000;
+}
+
+.checked{
+	color: #9C0A5A;
+}
+
