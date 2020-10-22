@@ -1,0 +1,57 @@
+body{
+	background: url('./images/bg.jpg');
+}
+
+.container{
+	
+}
+
+h1{
+	text-align: center;
+	color: #fff;
+	margin-top: 5%;
+	font-weight: 900;
+	font-family: "Cinzel Decorative";
+	background-color: #9C0A5A;
+	width: 50%;
+	margin-left: 20%;
+	padding: 5px;
+}
+
+.btn{
+	background-color: #9C0A5A;
+	color: #fff;
+	float: right;
+}
+
+.btn:hover{
+	color:  #fff;
+}
+
+.row p{
+	padding-left: 5%;
+	color: #fff;
+}
+
+.first{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 8vw;
+  text-align: center;
+  float: left; 
+}
+
+h6{
+	font-family: "Cinzel Decorative";
+}
+
+.btn-pink{
+	border: none;
+	color: white;
+	padding: 14px 14px;
+	font-size: 20px;
+	border-radius: 50%;
+}
+
+li{
+	list-style: none;
+}
