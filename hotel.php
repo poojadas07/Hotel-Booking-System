@@ -82,7 +82,7 @@
 					  	<p class="card-text pink-text" style="float: right; font-size: 30px; line-height: 15px;"><b> $ <?php echo $row['prate']; ?> </b><br><b style="font-size: 10px; "> YOUR PERSONAL RATE </b></p>
 					    <h6 class="card-tittle black-text"><b><?php echo $row['hname']; ?></b><br><i class="fas fa-map-marker-alt pr-1" style="font-size: 12px;"> <?php echo $row['location']; ?> </i></h6>
 					    <br>
-					    
+
 					    <p class="card-text grey-text" style="float: right; font-size: 25px; line-height: 15px;"><b style=" text-decoration: line-through;"> $ <?php echo $row['srate']; ?></b><br><b style="font-size: 10px; "> STANDARD RATE </b></p>
 					    
 					    <span class="fa fa-star checked"></span>
