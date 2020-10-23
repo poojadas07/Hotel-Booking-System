@@ -86,14 +86,17 @@
             <span class="fa fa-star checked"></span>
             <span class="fa fa-star"></span>
             <span class="fa fa-star"></span></b></h6>
-              <p class="card-text black-text mr-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt.</p>
-              <hr>
+              <p class="card-text black-text mr-3"> <?php echo $row['description']; ?></p>
+             
+            </div>
+
+            <div class="card-footer">
               <a href="details.php">
-              <button type="submit" class="btn btn-md btn-block active"> Select This Room <i class="fas fa-angle-double-right ml-2"></i></button>
+              <button type="submit" class="btn btn-md btn-block active py-3"> Select This Room <i class="fas fa-angle-double-right ml-2"></i></button>
               </a>
 
-          </div>
+            </div>
+
             
         </div>
 
