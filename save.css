@@ -25,3 +25,45 @@ body{
 .fa{
 	color: #9C0A5A;
 }
+
+.upper{
+	background-color: #fff; 
+	width: 85vw; 
+	height: 45vh;
+}
+
+.lower{
+	background-color: pink; 
+	width: 85vw; 
+	height: 60vh;
+}
+
+.image{
+	width: 60%; 
+	height: 80%;     
+	border: 8px solid #fff;
+    background-color: #fff; 
+    box-shadow: 0 3px 8px 0 rgba(0,0,0,.9);
+}
+
+h6{
+	color: #000;
+	font-weight: 900;
+	font-family: "Cinzel Decorative";
+	font-size: 40px;
+	margin-top: 100px;
+}
+
+.heading{
+	font-size: 20px;
+	font-weight: 900;
+	font-family: "Cinzel Decorative";
+	text-decoration: underline;
+}
+
+.down{
+	font-size: 15px; 
+	color: red;
+	margin: auto;
+	font-weight: 500;
+}
