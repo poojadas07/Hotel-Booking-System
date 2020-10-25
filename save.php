@@ -115,37 +115,37 @@
 		      <div class="card-body">
 		      	<div class="col-12">
 		      		<p class="p-3" style="font-size: 20px;">
-		      			<b><i class="fa fa-user" aria-hidden="true" style="color: #0000ff; "></i></b> 
+		      			<b><i class="fa fa-user" aria-hidden="true"></i></b> 
 		      			<i class="ml-2 pl-4"> <?php echo $name ;?></i>
 		      		</p>
 		      	</div>
 		      	<div class="col-12">
 		      		<p class="p-3" style="font-size: 20px;">
-		      			<b><i class="fa fa-envelope" aria-hidden="true" style="color: #0000ff; "></i></i></b> 
+		      			<b><i class="fa fa-envelope" aria-hidden="true"></i></i></b> 
 		      			<i class="ml-2 pl-4"> <?php echo $email ;?></i>
 		      		</p>
 		      	</div>
 		      	<div class="col-12">
 		      		<p class="p-3" style="font-size: 20px;">
-		      			<b><i class="fa fa-phone" aria-hidden="true" style="color: #0000ff; "></i></b> 
+		      			<b><i class="fa fa-phone" aria-hidden="true"></i></b> 
 		      			<i class="ml-2 pl-4"> <?php echo $phone ;?> </i>
 		      		</p>
 		      	</div>
 		      	<div class="col-12">
 		      		<p class="p-3" style="font-size: 20px;">
-		      			<b><i class="fa fa-key" aria-hidden="true" style="color: #0000ff; "></i></b> 
+		      			<b><i class="fa fa-key" aria-hidden="true"></i></b> 
 		      			<i class="ml-2 pl-4"> <?php echo $password ;?> </i>
 		      		</p>
 		      	</div>
 		      	<div class="col-12">
 		      		<p class="p-3" style="font-size: 20px;">
-		      			<b><i class="fa fa-map-marker-alt" aria-hidden="true" style="color: #0000ff; "></i> Address :</b> 
+		      			<b><i class="fa fa-map-marker-alt" aria-hidden="true"></i> Address :</b> 
 		      			<i class="ml-2 pl-4"> <?php echo $address ;?>, <?php echo $city ;?> <br> <?php echo $zip ;?> , <?php echo $state ;?> , <?php echo $country ;?></i>
 		      		</p>
 		      	</div>
 		      	<div class="col-12">
 		      		<p class="p-3" style="font-size: 20px;">
-		      			<b><i class="fas fa-fingerprint pr-1" aria-hidden="true" style="color: #0000ff; "></i> Aadhar Number :</b> 
+		      			<b><i class="fas fa-fingerprint pr-1" aria-hidden="true"></i> Aadhar Number :</b> 
 		      			<i class="ml-2 pl-4"> <?php echo $aadhar ;?> </i>
 		      		</p>
 		      	</div>
@@ -158,37 +158,37 @@
 		      <div class="card-body">
 		      	<div class="col-12">
 		      		<p class="p-3" style="font-size: 20px;">
-		      			<b><i class="fa fa-home pr-1" aria-hidden="true" style="color: #0000ff; "></i> Room Type :</b> 
+		      			<b><i class="fa fa-home pr-1" aria-hidden="true"></i> Room Type :</b> 
 		      			<i class="ml-2 pl-4"> <?php echo $room ;?> </i>
 		      		</p>
 		      	</div>
 		      	<div class="col-12">
 		      		<p class="p-3" style="font-size: 20px;">
-		      			<b><i class="fa fa-users pr-1" aria-hidden="true" style="color: #0000ff; "></i> Number of Guests : </b> 
+		      			<b><i class="fa fa-users pr-1" aria-hidden="true"></i> Number of Guests : </b> 
 		      			<i class="ml-2 pl-4"> <?php echo $nroom ;?> </i>
 		      		</p>
 		      	</div>
 		      	<div class="col-12">
 		      		<p class="p-3" style="font-size: 20px;">
-		      			<b><i class="fas fa-plane-arrival pr-1" aria-hidden="true" style="color: #0000ff; "></i> Arrival Time : </b> 
+		      			<b><i class="fas fa-plane-arrival pr-1" aria-hidden="true"></i> Arrival Time : </b> 
 		      			<i class="ml-2 pl-4"> <?php echo $arrival ;?> </i>
 		      		</p>
 		      	</div>
 		      	<div class="col-12">
 		      		<p class="p-3" style="font-size: 20px;">
-		      			<b><i class="fas fa-plane-departure pr-1" aria-hidden="true" style="color: #0000ff; "></i> Depature Time : </b> 
+		      			<b><i class="fas fa-plane-departure pr-1" aria-hidden="true"></i> Depature Time : </b> 
 		      			<i class="ml-2 pl-4"> <?php echo $departure ;?></i>
 		      		</p>
 		      	</div>
 		      	<div class="col-12">
 		      		<p class="p-3" style="font-size: 20px;">
-		      			<b><i class="fa fa-taxi pr-1" aria-hidden="true" style="color: #0000ff; "></i> Free PickUp? </b> 
+		      			<b><i class="fa fa-taxi pr-1" aria-hidden="true"></i> Free PickUp? </b> 
 		      			<i class="ml-2 pl-4"> <?php echo $pick ;?> </i>
 		      		</p>
 		      	</div>
 		      	<div class="col-12">
 		      		<p class="p-3" style="font-size: 20px;">
-		      			<b><i class="fa fa-fighter-jet pr-1" aria-hidden="true" style="color: #0000ff; "></i> Flight Number : </b> 
+		      			<b><i class="fa fa-fighter-jet pr-1" aria-hidden="true"></i> Flight Number : </b> 
 		      			<i class="ml-2 pl-4"> <?php echo $flightn ;?> </i>
 		      		</p>
 		      	</div>

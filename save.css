@@ -8,7 +8,7 @@ body{
 	margin-top: 3%;
 	font-weight: 900;
 	font-family: "Cinzel Decorative";
-	background-color: #0000ff;
+	background-color: #9C0A5A;
 	width: 85%;
 	margin-left: 8%;
 }
@@ -22,31 +22,6 @@ body{
   margin-top: 5px;
 }
 
-#steps { 
-	margin: 80px 0 0 0;
-}
-.prev {
-	float:left;
-}
-.next, .submit {
-	float:right;
-}
-.error { 
-	color: red;
-}
-#progress { 
-	position: relative; 
-	height: 15px; 
-	background-color: #eee; 
-	margin-bottom: 20px; 
-    border-radius: 20px;
-}
-#progress-complete { 
-	border: 0; 
-	position: absolute; 
-	height: 15px; 
-	min-width: 10px; 
-	background-color: #337ab7; 
-	transition: width .5s ease-in-out;
-    border-radius: 20px;
+.fa{
+	color: #9C0A5A;
 }
