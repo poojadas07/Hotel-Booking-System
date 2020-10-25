@@ -115,10 +115,10 @@
 				
 			</div>
 			<div class="col-6">
-				<h6 class="ml-5"><?php echo $name ;?></h6>
-				<p class="ml-5 pl-3"><b><i class="fa fa-envelope" aria-hidden="true"></i></b> <?php echo $email ;?></p>
-				<p class="ml-5 pl-3"><b><i class="fa fa-phone" aria-hidden="true"></i></b> <?php echo $phone ;?></p>
-				<p class="ml-5 pl-3"><b><i class="fa fa-key" aria-hidden="true"></i></b> <?php echo $password ;?> </p>
+				<h6><?php echo $name ;?></h6><br>
+				<p class="pl-5"><b><i class="fa fa-envelope" aria-hidden="true"></i></b> <?php echo $email ;?></p>
+				<p class="pl-5"><b><i class="fa fa-phone" aria-hidden="true"></i></b> <?php echo $phone ;?></p>
+				<p class="pl-5"><b><i class="fa fa-key" aria-hidden="true"></i></b> <?php echo $password ;?> </p>
 				
 			</div>
 		</div>
