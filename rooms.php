@@ -5,7 +5,7 @@
     header('location:login.php');
   }
 
-  $con = mysqli_connect('localhost' , 'root' , 'root');
+  $con = mysqli_connect('localhost:3307' , 'root' , 'root');
 
   mysqli_select_db($con , 'tourist');
 
